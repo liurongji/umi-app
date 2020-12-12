@@ -1,10 +1,10 @@
 import React from 'react';
-import Slider, { Settings } from 'react-slick';
+import Slider, {    Settings } from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export default function SimpleSlider() {
-  var settings: Settings = {
+  const settings: Settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -16,16 +16,16 @@ export default function SimpleSlider() {
     <div>
       <Slider {...settings}>
         <div>
-          <img src="http://placekitten.com/g/400/200" />
+          <img alt="" src="http://placekitten.com/g/400/200" />
         </div>
         <div>
-          <img src="http://placekitten.com/g/400/200" />
+          <img alt="" src="http://placekitten.com/g/400/200" />
         </div>
         <div>
-          <img src="http://placekitten.com/g/400/200" />
+          <img alt="" src="http://placekitten.com/g/400/200" />
         </div>
         <div>
-          <img src="http://placekitten.com/g/400/200" />
+          <img alt="" src="http://placekitten.com/g/400/200" />
         </div>
       </Slider>
     </div>

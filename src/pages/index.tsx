@@ -1,20 +1,13 @@
-import SimpleSlider from '@/components/SimpleSlider';
 import Swiper from '@/components/Swiper';
-import { Icon, NavBar, List, Carousel, WingBlank } from 'antd-mobile';
+import { Icon, List, NavBar } from 'antd-mobile';
 import React from 'react';
 
-const Item = List.Item;
-const Brief = Item.Brief;
+console.log(process.env.UMI_ENV);
+
+const { Item } = List;
+const { Brief } = Item;
 
 export default () => {
-  const state = {
-    data: [
-      { url: 'AiyWuByWklrrUDlFignR' },
-      { url: 'TekJlZRVCjLFexlOCuWn' },
-      { url: 'IJOtIlfsYdTyaDTRVrLI' },
-    ],
-    imgHeight: 176,
-  };
   return (
     <div>
       <NavBar
@@ -53,7 +46,6 @@ export default () => {
           Title <Brief>subtitle</Brief>
         </Item>
       </List>
-      <Swiper></Swiper>
     </div>
   );
 };

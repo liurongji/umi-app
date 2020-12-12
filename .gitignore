@@ -18,3 +18,6 @@
 /src/.umi-production
 /src/.umi-test
 /.env.local
+// .stylelintignore 忽略stylelint检查的文件
+// .prettierignore 忽略prettier检查的文件
+// .eslintignore 忽略eslint检查的文件

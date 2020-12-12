@@ -1,8 +1,5 @@
-import { Icon, NavBar, List, Carousel, WingBlank } from 'antd-mobile';
-import React from 'react';
-
-const Item = List.Item;
-const Brief = Item.Brief;
+import { Carousel, WingBlank } from 'antd-mobile';
+import React, { useState } from 'react';
 
 export default () => {
   const state = {
@@ -16,10 +13,10 @@ export default () => {
   return (
     <div>
       <WingBlank>
-        <Carousel initialSlideWidth={state.imgHeight} autoplay={false} infinite>
-          {state.data.map((val, index) => (
+        <Carousel initialSlideWidth={state.imgHeight} autoplay={true} infinite>
+          {state.data.map((val) => (
             <a
-              key={index}
+              key={val.url}
               href="http://www.alipay.com"
               style={{
                 display: 'inline-block',

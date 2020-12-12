@@ -2,25 +2,11 @@ import { Carousel, WingBlank } from 'antd-mobile';
 import React, { Component } from 'react';
 
 export default class App extends Component {
-  constructor(props: {} | Readonly<{}>) {
-    super(props);
-  }
   state = {
     data: ['1', '2', '3'],
     imgHeight: 176,
   };
-  componentWillMount() {
-    // simulate img loading
-    setTimeout(() => {
-      this.setState({
-        data: [
-          'AiyWuByWklrrUDlFignR',
-          'TekJlZRVCjLFexlOCuWn',
-          'IJOtIlfsYdTyaDTRVrLI',
-        ],
-      });
-    }, 100);
-  }
+
   render() {
     return (
       <WingBlank>
@@ -30,9 +16,9 @@ export default class App extends Component {
           beforeChange={(from, to) =>
             console.log(`slide from ${from} to ${to}`)
           }
-          afterChange={index => console.log('slide to', index)}
+          afterChange={(index) => console.log('slide to', index)}
         >
-          {this.state.data.map(val => (
+          {this.state.data.map((val) => (
             <a
               key={val}
               href="http://www.alipay.com"
